@@ -26,8 +26,11 @@ Core Algorithms (ระบบประมวลผลหลัก) :
 Hardware Setup (อุปกรณ์ที่ใช้) :
 
  Microcontroller:ESP32-S3 
+ 
  Sensors:6x VL53L1X (Time-of-Flight Distance Sensors)
+ 
  I2C Multiplexer:TCA9548A 
+ 
  Input/Output: Foot Pedal , Relay Module ควบคุม Solenoid Valve
 
 
@@ -36,13 +39,17 @@ I2C Pin Configuration:
  | Module | ESP32-S3 Pin | Note |
 
  | SDA | GPIO 5 | Data Line |
+ 
  | SCL | GPIO 6 | Clock Line |
+ 
  | MUX RST| GPIO 4 | Active Low for Hardware Reset |
+ 
  | Pedal | GPIO 12 | Input Signal |
 
 Repository Structure :
 
  /src - Source code หลักของระบบ 
+ 
  /docs - ไฟล์ Flowchart แผนผังการทำงานของ Algorithm 
 
 
