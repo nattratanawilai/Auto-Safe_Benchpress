@@ -3,6 +3,8 @@ Smart Safety Bar for Bench Press
 " An Automatic Safety System for  Weightlifters "
  
 โปรเจกต์โครงงานพัฒนาระบบความปลอดภัยอัตโนมัติสำหรับผู้ที่ออกกำลังกายท่า Bench Press คนเดียว โดยใช้เซนเซอร์วัดระยะทางความแม่นยำสูง (ToF) วิเคราะห์ความเร็วและพฤติกรรมของบาร์เบล เพื่อสั่งการระบบกลไกช่วยเหลือเมื่อผู้เล่นเกิดอาการหมดแรงหรือเกิดอุบัติเหตุ
+
+ปัจจุบันโปรเจกต์อยู่ในเฟสทดสอบและประมวลผลอัลกอริทึม (Algorithm Validation) โดยเน้นไปที่ความแม่นยำของการอ่านค่าเซนเซอร์และตรรกะความปลอดภัย เมื่อระบบตรวจพบเงื่อนไขอันตรายจะจำลองการสั่งงานโดยการแสดงผลผ่าน Serial Monitor เป็นหลัก (ยังไม่ได้เชื่อมต่อระบบมอเตอร์จริงในเวอร์ชันนี้)
  
 Developer:[ณัฏฐ์ รัตนวิไล , เตชินท์ พรหมเจริญ , ณัฐนันท์  คงมาก]
 
@@ -51,5 +53,11 @@ Repository Structure :
  /src - Source code หลักของระบบ 
  
  /docs - ไฟล์ Flowchart แผนผังการทำงานของ Algorithm 
+
+Current Scope & Future Work :
+Phase 1: Logic & Algorithm (Current) มุ่งเน้นการแก้ปัญหาเรื่องสัญญาณรบกวน (Noise Filtering) และสร้าง State Machine ที่ทำงานได้แม่นยำ 100% โดยแสดงผลการ Trigger ผ่าน Serial Console
+
+Phase 2: Hardware Actuation (Future Plan)
+  เตรียมนำoutput จากบอร์ด ESP32 ไปเชื่อมต่อกับ Relay Module เพื่อสั่งมอเตอร์จริง
 
 
