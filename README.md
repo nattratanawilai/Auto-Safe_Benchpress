@@ -55,6 +55,7 @@ Repository Structure :
  /docs - ไฟล์ Flowchart แผนผังการทำงานของ Algorithm 
 
 Current Scope & Future Work :
+
 Phase 1: Logic & Algorithm (Current) มุ่งเน้นการแก้ปัญหาเรื่องสัญญาณรบกวน (Noise Filtering) และสร้าง State Machine ที่ทำงานได้แม่นยำ 100% โดยแสดงผลการ Trigger ผ่าน Serial Console
 
 Phase 2: Hardware Actuation (Future Plan)
